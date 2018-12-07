@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserListCoordinator: Coordinator {
+class UserListNavigator: Navigator {
     
     let navigationController: UINavigationController?
     
@@ -20,7 +20,14 @@ class UserListCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
-    func navigate(to destination: UserListCoordinator.Destination) {
-        
+    func navigate(to destination: UserListNavigator.Destination) {
+        switch destination {
+        case .userPostList(let userId):
+            if let userPostsTableVC = UIStoryboard(name: "Main", bundle: nil)
+                .instantiateViewController(withIdentifier: "UserPostsTableViewController") as? UserPostsTableViewController {
+                userPostsTableVC.configure(userId: userId)
+                navigationController?.show(userPostsTableVC, sender: nil)
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ class UserListTableViewController: UITableViewController {
     
     private var viewModel: UserListViewModel?
     private let client = Client()
-    private var coordinator: UserListCoordinator?
+    private var navigator: UserListNavigator?
     private let disposeBag = DisposeBag()
     
     // MARK: - View life cycle
@@ -21,8 +21,10 @@ class UserListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = nil
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
         viewModel = UserListViewModel(client: client)
-        coordinator = UserListCoordinator(navigationController: navigationController)
+        navigator = UserListNavigator(navigationController: navigationController)
         bindViewModel()
     }
     
@@ -34,8 +36,12 @@ class UserListTableViewController: UITableViewController {
             cell?.configure(viewModel: element)
             return cell ?? UITableViewCell()
         }.disposed(by: disposeBag)
-        tableView.rx.itemSelected.subscribe { indexPath in
-            print(indexPath)
+        tableView.rx.itemSelected.subscribe { [unowned self] indexPath in
+            guard let row = indexPath.element?.row,
+                let element = self.viewModel?.users.value[row] else {
+                    return
+            }
+            self.navigator?.navigate(to: .userPostList(userId: element.id))
         }.disposed(by: disposeBag)
     }
 }

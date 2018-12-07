@@ -26,6 +26,10 @@
 		F135814321B875A2005659A7 /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814221B875A2005659A7 /* UsersAPI.swift */; };
 		F135814521B934B9005659A7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814421B934B9005659A7 /* Coordinator.swift */; };
 		F135814721B934FB005659A7 /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814621B934FB005659A7 /* UserListCoordinator.swift */; };
+		F135814A21BA7697005659A7 /* UserPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814921BA7697005659A7 /* UserPostsTableViewController.swift */; };
+		F135814C21BA772B005659A7 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814B21BA772B005659A7 /* UserPostsViewModel.swift */; };
+		F135814E21BA776C005659A7 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814D21BA776C005659A7 /* UserPost.swift */; };
+		F135815021BAAC03005659A7 /* UserPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135814F21BAAC03005659A7 /* UserPostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		F135814221B875A2005659A7 /* UsersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
 		F135814421B934B9005659A7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F135814621B934FB005659A7 /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
+		F135814921BA7697005659A7 /* UserPostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsTableViewController.swift; sourceTree = "<group>"; };
+		F135814B21BA772B005659A7 /* UserPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewModel.swift; sourceTree = "<group>"; };
+		F135814D21BA776C005659A7 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		F135814F21BAAC03005659A7 /* UserPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostTableViewCell.swift; sourceTree = "<group>"; };
 		FCE5C9755A69F72C2F64D64C /* Pods-UsersApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsersApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsersApp/Pods-UsersApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F10C68E021B8367A0037B3C5 /* Networking */,
+				F135814821BA7664005659A7 /* UserPostList */,
 				F10C68C721B7E0D60037B3C5 /* UserList */,
 				F10C689921B7DD2F0037B3C5 /* AppDelegate.swift */,
 				F135814421B934B9005659A7 /* Coordinator.swift */,
@@ -196,6 +205,17 @@
 				F135814221B875A2005659A7 /* UsersAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		F135814821BA7664005659A7 /* UserPostList */ = {
+			isa = PBXGroup;
+			children = (
+				F135814921BA7697005659A7 /* UserPostsTableViewController.swift */,
+				F135814B21BA772B005659A7 /* UserPostsViewModel.swift */,
+				F135814D21BA776C005659A7 /* UserPost.swift */,
+				F135814F21BAAC03005659A7 /* UserPostTableViewCell.swift */,
+			);
+			path = UserPostList;
 			sourceTree = "<group>";
 		};
 		F806B3529D0DCA0D7F2CEB65 /* Frameworks */ = {
@@ -428,8 +448,12 @@
 				F135814321B875A2005659A7 /* UsersAPI.swift in Sources */,
 				F135814521B934B9005659A7 /* Coordinator.swift in Sources */,
 				F135814721B934FB005659A7 /* UserListCoordinator.swift in Sources */,
+				F135814C21BA772B005659A7 /* UserPostsViewModel.swift in Sources */,
+				F135814A21BA7697005659A7 /* UserPostsTableViewController.swift in Sources */,
+				F135814E21BA776C005659A7 /* UserPost.swift in Sources */,
 				F10C68E621B836960037B3C5 /* Client.swift in Sources */,
 				F10C68C921B7E1040037B3C5 /* UserListTableViewController.swift in Sources */,
+				F135815021BAAC03005659A7 /* UserPostTableViewCell.swift in Sources */,
 				F10C68CB21B7E18D0037B3C5 /* UserListViewModel.swift in Sources */,
 				F135814121B86A0E005659A7 /* UserTableViewCell.swift in Sources */,
 				F10C689A21B7DD2F0037B3C5 /* AppDelegate.swift in Sources */,

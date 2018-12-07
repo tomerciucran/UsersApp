@@ -12,4 +12,8 @@ enum UsersAPI {
     static func getUsers() -> Endpoint<[User]> {
         return Endpoint(path: "users")
     }
+    
+    static func getUserPosts(userId: Int) -> Endpoint<[UserPost]> {
+        return Endpoint(path: "posts", parameters: ["userId": userId])
+    }
 }
