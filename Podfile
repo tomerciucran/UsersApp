@@ -10,6 +10,7 @@ target 'UsersApp' do
 pod 'Alamofire'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'RxTest'
 
   target 'UsersAppTests' do
     inherit! :search_paths
