@@ -32,6 +32,7 @@
 		F149A5FA21BD581A00F32634 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149A5F921BD581A00F32634 /* UserViewModelTests.swift */; };
 		F149A5FC21BD5BF300F32634 /* UserListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149A5FB21BD5BF300F32634 /* UserListViewModelTests.swift */; };
 		F149A5FE21BD5F1500F32634 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149A5FD21BD5F1500F32634 /* MockClient.swift */; };
+		F149A60021BE6AB800F32634 /* UserListTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149A5FF21BE6AB800F32634 /* UserListTableViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		F149A5F921BD581A00F32634 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
 		F149A5FB21BD5BF300F32634 /* UserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModelTests.swift; sourceTree = "<group>"; };
 		F149A5FD21BD5F1500F32634 /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
+		F149A5FF21BE6AB800F32634 /* UserListTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewControllerTests.swift; sourceTree = "<group>"; };
 		FCE5C9755A69F72C2F64D64C /* Pods-UsersApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsersApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsersApp/Pods-UsersApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +181,7 @@
 				F149A5F621BD517500F32634 /* UserTests.swift */,
 				F149A5F921BD581A00F32634 /* UserViewModelTests.swift */,
 				F149A5FB21BD5BF300F32634 /* UserListViewModelTests.swift */,
+				F149A5FF21BE6AB800F32634 /* UserListTableViewControllerTests.swift */,
 				F149A5F821BD57E000F32634 /* UsersAppTests-Bridging-Header.h */,
 			);
 			path = UsersAppTests;
@@ -477,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F149A5FE21BD5F1500F32634 /* MockClient.swift in Sources */,
+				F149A60021BE6AB800F32634 /* UserListTableViewControllerTests.swift in Sources */,
 				F149A5FC21BD5BF300F32634 /* UserListViewModelTests.swift in Sources */,
 				F149A5F721BD517500F32634 /* UserTests.swift in Sources */,
 				F149A5FA21BD581A00F32634 /* UserViewModelTests.swift in Sources */,

@@ -11,7 +11,7 @@ import RxSwift
 
 class UserListTableViewController: UITableViewController {
     
-    private var viewModel: UserListViewModel?
+    var viewModel: UserListViewModel?
     private let client = Client()
     private var navigator: UserListNavigator?
     private let disposeBag = DisposeBag()
@@ -23,7 +23,7 @@ class UserListTableViewController: UITableViewController {
         tableView.dataSource = nil
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
-        viewModel = UserListViewModel(client: client)
+        if viewModel == nil { viewModel = UserListViewModel(client: client) }
         navigator = UserListNavigator(navigationController: navigationController)
         bindViewModel()
     }
