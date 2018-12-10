@@ -27,10 +27,6 @@ class UserListViewModel {
             print(error)
         }.disposed(by: disposeBag)
     }
-    
-    func userItemSelected(indexPath: IndexPath) {
-        
-    }
 }
 
 class UserViewModel {

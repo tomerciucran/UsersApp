@@ -9,8 +9,8 @@
 import Foundation
 
 class UserPost: Decodable {
-    private(set) var userId: Int = 0
-    private(set) var id: Int = 0
-    private(set) var title: String = ""
-    private(set) var body: String = ""
+    private(set) var userId: Int
+    private(set) var id: Int
+    private(set) var title: String
+    private(set) var body: String
 }

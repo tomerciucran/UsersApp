@@ -9,11 +9,11 @@
 import Foundation
 
 class User: Decodable {
-    private(set) var id: Int = 0
-    private(set) var name: String = ""
-    private(set) var username: String = ""
-    private(set) var email: String = ""
-    private(set) var address = Address()
+    private(set) var id: Int
+    private(set) var name: String
+    private(set) var username: String
+    private(set) var email: String
+    private(set) var address: Address
     
     init(id: Int, name: String, username: String, email: String, address: Address) {
         self.id = id
@@ -24,12 +24,10 @@ class User: Decodable {
     }
     
     class Address: Decodable {
-        private(set) var street: String = ""
-        private(set) var suite: String = ""
-        private(set) var city: String = ""
-        private(set) var zipcode: String = ""
-        
-        init() {}
+        private(set) var street: String
+        private(set) var suite: String
+        private(set) var city: String
+        private(set) var zipcode: String
         
         init(street: String, suite: String, city: String, zipcode: String) {
             self.street = street
